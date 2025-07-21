@@ -8,7 +8,7 @@ public class MapperClass {
         Profile profile = new Profile();
 
         profile.setId(profileDTO.getId());
-        profile.setFullName(profile.getFullName());
+        profile.setFullName(profileDTO.getFullName());
         profile.setEmail(profileDTO.getEmail());
         profile.setPassword(profileDTO.getPassword());
         profile.setProfileImageUrl(profileDTO.getProfileImageUrl());
