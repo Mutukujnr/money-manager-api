@@ -30,7 +30,7 @@ public class ProfileController {
         boolean activateProfile = profileService.activateProfile(token);
 
         if(activateProfile){
-            return ResponseEntity.ok("account updated successfully");
+            return ResponseEntity.ok("account activated successfully");
         }else{
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("activation token not found or has been used");
         }
@@ -59,9 +59,12 @@ public class ProfileController {
         }
     }
 
-    @GetMapping("/test")
-    public String test(){
-        return "Test successful";
+
+    @GetMapping("/profile")
+    public ResponseEntity<ProfileDTO> getProfile(){
+        ProfileDTO publicProfile = profileService.getPublicProfile(null);
+
+        return ResponseEntity.ok(publicProfile);
     }
 
 

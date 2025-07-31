@@ -94,29 +94,26 @@
 		<!-- Core POI for Excel files (.xlsx, .xls) -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.4.0</version>
 		</dependency>
 
-		<!-- For older Excel files (.xls) - optional -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>5.2.4</version>
-		</dependency>
-
-		<!-- For Word documents (.docx) - if needed -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>4.1.2</version>
+			<version>5.4.0</version>
 		</dependency>
 
-		<!-- For PowerPoint (.pptx) - if needed -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-scratchpad</artifactId>
-			<version>5.2.4</version>
+			<version>5.4.0</version>
 		</dependency>
 
 		<dependency>
